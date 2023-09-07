@@ -113,8 +113,6 @@ $c = (double) $a;
 echo "Valor de \$a: $a<br>";
 echo "Valor de \$b: $b<br>";
 echo "Valor de \$c: $c<br>";
-
-
     ?>
 
 </body>
