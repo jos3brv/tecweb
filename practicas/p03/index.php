@@ -102,7 +102,7 @@ function ejecutarCodigo() {
 ejecutarCodigo(); 
 ?>
 
- <h2>Ejercicio 5</h2>
+ <h2>Ejercicio 6</h2>
     <?php
 
 $a = "7 personas";
@@ -114,6 +114,24 @@ echo "Valor de \$a: $a<br>";
 echo "Valor de \$b: $b<br>";
 echo "Valor de \$c: $c<br>";
     ?>
+
+
+<h2>Ejercicio 7</h2>
+    <?php
+
+
+$apacheVersion = $_SERVER['SERVER_SOFTWARE'];
+$phpVersion = phpversion();
+$serverOS = php_uname();
+$clientLanguage = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+
+echo "Versión de Apache: $apacheVersion<br>";
+echo "Versión de PHP: $phpVersion<br>";
+echo "Nombre del sistema operativo del servidor: $serverOS<br>";
+echo "Idioma del navegador (cliente): $clientLanguage<br>";
+?>
+
+
 
 </body>
 </html>
