@@ -26,5 +26,34 @@
         echo '<li>$_element1 es válida porque inicia con guión bajo.</li>';
         echo '</ul>';
     ?>
+
+    <h2>Ejercicio 2</h2>
+    <?php
+  
+    $a = "ManejadorSQL";
+    $b = 'MySQL'; 
+    $c = &$a;
+    echo '<h4>a)</h4>';
+    echo "$a";
+    echo '<br>';
+    echo "$b";
+    echo '<br>';
+    echo "$c";
+    echo '<br>';
+
+    //b)
+    $a = "PHP server";
+    $b = &$a;
+    $c = &$a;
+    echo '<h4>c)</h4>';
+    echo "$a";
+    echo '<br>';
+    echo "$b";
+    echo '<br>';
+    echo "$c";
+
+    echo '<h4>d)</h4>';
+    echo '<p>En el segundo bloque de asignaciones, se cambió el valor de la variable $a de "ManejadorSQL" a "PHP server" mediante la asignación $a = "PHP server". Luego, la variable $b se convirtió en una referencia a $a mediante la asignación $b = &$a. Esto significa que tanto $a como $b apuntan a la misma ubicación de memoria y, por lo tanto, contienen el mismo valor "PHP server". Además, la variable $c, que ya era una referencia a $a desde el primer conjunto de asignaciones, también refleja el cambio y contiene "PHP server".</p>';
+    ?>
 </body>
 </html>
