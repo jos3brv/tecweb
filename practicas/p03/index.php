@@ -55,5 +55,30 @@
     echo '<h4>d)</h4>';
     echo '<p>En el segundo bloque de asignaciones, se cambió el valor de la variable $a de "ManejadorSQL" a "PHP server" mediante la asignación $a = "PHP server". Luego, la variable $b se convirtió en una referencia a $a mediante la asignación $b = &$a. Esto significa que tanto $a como $b apuntan a la misma ubicación de memoria y, por lo tanto, contienen el mismo valor "PHP server". Además, la variable $c, que ya era una referencia a $a desde el primer conjunto de asignaciones, también refleja el cambio y contiene "PHP server".</p>';
     ?>
+
+<h2>Ejercicio 3</h2>
+    <?php
+$a = "PHP5";
+echo "$a";
+echo '<br>';
+$z[] = &$a;
+echo @"$z";
+echo '<br>';
+$b = "5a version de PHP";
+echo "$b";
+echo '<br>';
+@$c = $b*10;
+echo "$c";
+echo '<br>';
+$a .= $b;
+echo "$a";
+echo '<br>';
+$b *= $c;
+echo "$b";
+echo '<br>';
+$z[0] = "MySQL";
+echo @"$z";
+echo '<br>';
+    ?>
 </body>
 </html>
