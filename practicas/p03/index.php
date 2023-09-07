@@ -102,6 +102,20 @@ function ejecutarCodigo() {
 ejecutarCodigo(); 
 ?>
 
+ <h2>Ejercicio 5</h2>
+    <?php
+
+$a = "7 personas";
+$b = (int) $a;
+$a = "9E3";
+$c = (double) $a;
+
+echo "Valor de \$a: $a<br>";
+echo "Valor de \$b: $b<br>";
+echo "Valor de \$c: $c<br>";
+
+
+    ?>
 
 </body>
 </html>
